@@ -1,0 +1,655 @@
+/* *************************************************/
+/* Header Styling  */
+/* *************************************************/
+.logo {
+  /* setting height is easier to control the images */
+  height: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  /* for header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  /* Since position for heavder-nav for navigation is absolute */
+  position: relative;
+}
+/* *************************************************/
+/* Navigation Styling  */
+/* *************************************************/
+.main-nav-list {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+  list-style: none;
+}
+
+.main-nav-links:link,
+.main-nav-links:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.main-nav-links:hover,
+.main-nav-links:active {
+  color: #cf711f;
+}
+/* To increase specificity , add both class name without gap */
+.main-nav-links.nav-cta:link,
+.main-nav-links.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.main-nav-links.nav-cta:hover,
+.main-nav-links.nav-cta:active {
+  background-color: #cf711f;
+}
+/* *************************************************/
+/* Header section - Mobile Navigation Button styling  */
+/* *************************************************/
+
+/* 
+ <ion-icon class="mobile-menu-icon" name="menu-outline"></ion-icon>
+<ion-icon class="mobile-menu-icon" name="close-outline"></ion-icon>
+  */
+
+/* by default both buttons should be display:none and will be available once pixel breaks for responsiveness */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* to select particluar icon , we can attribute in CSS , in this case name attribute */
+.mobile-menu-icon[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+
+/* will be applied only if both classes , that sticky is parent and header and her0-section is child */
+.sticky .header {
+  /* makes it fixed */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 8888;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+}
+
+/* this is added because once header movies out of the dlow , hero section will become first chil of body , and whole page disrupts , so adding the margin-top , makes it seamless */
+
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+
+/* *************************************************/
+/* Main section  */
+/* Hero section styling */
+/* *************************************************/
+.hero-section {
+  background-color: #fdf2e9;
+  /* when backdround color , always use padding */
+  /* padding is the whitespace between sections */
+  padding: 4.8rem 0 9.6rem 0;
+  /* height: 100vh; */
+}
+/* Main div under hero section holding insdie two divs - one for hero-content and hero-img */
+.hero {
+  display: grid;
+  max-width: 130rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+  margin: 0 auto;
+  color: #333;
+  padding: 0 3.2rem;
+}
+.heading-description {
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+  line-height: 1.5;
+}
+/* hero-content delivered text and img styling */
+.delivered-hero-box {
+  /* adding margin top to create space between <a> tag and delivered div, but cannot add margin bottom to both anchor tags so added margin top here  */
+  margin-top: 8rem;
+  align-items: center;
+  display: flex;
+  gap: 1.6rem;
+}
+.delivered-imgs-container {
+  display: flex;
+}
+.delivered-imgs-container img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  /* making img to overlap with this trick */
+  margin-right: -2rem;
+  border: 3px solid #fdf2e9;
+}
+/* making img to overlap with this trick and last img as margin 0 */
+.delivered-imgs-container img:last-child {
+  margin: 0;
+}
+.delivered-p-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-p-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+/* hero section hero main img styling */
+.hero-img {
+  width: 100%;
+}
+/* *************************************************/
+/* Featured in SECTION */
+/* *************************************************/
+.featured-section {
+  padding: 3.6rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  font-family: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: #999;
+}
+
+.feature-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-logos img {
+  height: 3.2rem;
+  /* how to make images grey */
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* *************************************************/
+/* HOW IT WORKS SECTION */
+/* *************************************************/
+.how-it-works-section {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  color: #ddd;
+  font-size: 8.6rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* pseudo elements cannot be added to images , as img elements cannot have child element in html */
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Z index is 3rd dimension , to push element top with positive value and bottom with negative value */
+}
+
+/* before can be used only once */
+.step-img-box::before {
+  background-color: #fdf2e9;
+  width: 60%;
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+  border-radius: 50%;
+  z-index: -2;
+}
+.step-img-box::after {
+  background-color: #f8d8bd;
+  width: 45%;
+  /* 60% of parent's width */
+  padding-bottom: 45%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.step-img {
+  width: 35%;
+}
+
+/* *************************************************/
+/* MEALS SECTION */
+/* *************************************************/
+
+.meals-section {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  /* to make anything overflow outside meal container hidden */
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-2rem);
+  /* box shadow effect */
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+/* Make sure Img have same aspect ratio
+ */
+.meals-img {
+  width: 100%;
+}
+.meals-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.vegetarian {
+  background-color: #51cf66;
+}
+.vegan {
+  background-color: #a9e34b;
+}
+
+.paleo {
+  background-color: #ffd43b;
+}
+
+.meals-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meals-list-box {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meals-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+/* *************************************************/
+/* TESTIMONIAL SECTION */
+/* *************************************************/
+.testimonial-section {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 6.6rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonial-img {
+  /* since img are already square , setting width is enough */
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+/* *************************************************/
+/* Gallery SECTION */
+.gallery {
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.gallery-img {
+  width: 100%;
+  /* if img is inline and has small space between them */
+  display: block;
+  transition: all 0.5s;
+}
+
+.gallery-item {
+  /* makes anything oveflow outisde this container hidden */
+  overflow: hidden;
+}
+.gallery-img:hover {
+  transform: scale(1.2);
+}
+
+/* *************************************************/
+/* PRICING SECTION */
+/* *************************************************/
+.pricing-section {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+
+  /* If content is wider and occuping whole grid space , we can reduce width */
+  width: 75%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+.pricing-plan-starter {
+  justify-self: end;
+
+  /* to compensate 6px border */
+  padding: 3rem;
+  border: 6px solid #fdf2e9;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  padding: 3.6rem;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan-complete::after {
+  content: "Best Value";
+  font-size: 1.4rem;
+  font-weight: 500;
+  top: 6%;
+  right: -18%;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  text-transform: uppercase;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+.plan-name {
+  color: #e67e22;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+.plan-price {
+  color: #333;
+  margin-bottom: 2.4rem;
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+.ruppes {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.per-month {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -0.8rem;
+  color: #6f6f6f;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.outline {
+  padding: 2.4rem;
+  border-top: 1px solid #6f6f6f;
+  border-bottom: 1px solid #6f6f6f;
+}
+.plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+/* *************************************************/
+/* Features Section */
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.feature-descirption {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.plan-details {
+  text-align: center;
+  color: #6f6f6f;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+/* *************************************************/
+/* CTA SECTION */
+/* *************************************************/
+.cta-section {
+  /* /top/right / bottom / left  */
+  /* padding: 9.6rem 0 12.8rem 0; */
+  /* /top/ horizontal / bottom */
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta-main-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+  /* adding linear gradient from right bottom to top with these color variations */
+  /* for image to be hidden around corners */
+  /* height: 50rem; */
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta-text-box .heading-secondary {
+  color: #45260a;
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  font-family: inherit;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  color: inherit;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+.cta-form *:focus {
+  box-shadow: 0 0 0 0.8rem rgba(248, 216, 189, 0.509);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+/* *************************************************/
+/* FOOTER */
+/* *************************************************/
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links-ul {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-links:link,
+.footer-links:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.4s;
+}
+
+.footer-links:hover,
+.footer-links:active {
+  color: #555;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}

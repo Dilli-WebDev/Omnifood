@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* setting rem value at the root element 
+When the root font/HTML size is 100%, the font-size is 16px by default. But, if you set it to 62.5%, the new root value will be 10px. */
+html {
+  font-size: 62.5%;
+  /* this is to make mobile navigation in x-axis overlfow to be hidden and to be set in body as well */
+  overflow-x: hidden;
+
+  /* Doesn't work on safari , works only in google and firefox*/
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #555;
+  font-weight: 400;
+  /* this is to make mobile navigation in x-axis overlfow to be hidden and to be set in html as well */
+  /* only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+/* *************************************************/
+/* GENERAL RESUABLE COMPONENTS */
+/* *************************************************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
+}
+/* if parent contains two child grid container , basically this rule will apply to last child*/
+/* grid that is not last child will have this margin */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-align-center {
+  align-items: center;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+/* .grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+} */
+
+/* hero-content stlying */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #333;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #cf711f;
+  letter-spacing: 1px;
+  margin-bottom: 1.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 3.6rem;
+}
+/* Anchor tags in Hero section */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1.8rem 3.6rem;
+  border-radius: 10px;
+  font-weight: 600;
+  /* adding aniamtion for smooth transistion */
+  transition: all 0.5s;
+}
+
+.btn--form {
+  border: none;
+  font-size: 1.8rem;
+  font-family: inherit;
+  padding: 1.2rem;
+  align-self: end;
+  background-color: #45260a;
+  color: #fdf2e9;
+  transition: all 0.4s;
+}
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #333;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.btn-headone:link,
+.btn-headone:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn-headone:hover,
+.btn-headone:active {
+  background-color: #cf711f;
+}
+.btn-headtwo:link,
+.btn-headtwo:visited {
+  background-color: #fff;
+  color: #e67e22;
+}
+.btn-headtwo:hover,
+.btn-headtwo:active {
+  background-color: #fdf2e9;
+  /* this trick is to add border inside the element 
+  if we do with border , the layout jumps a little bit*/
+  box-shadow: inset 0 0 0 3px #e67e22;
+}
+/* helper class for margin-right alone */
+.margin-right {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom {
+  margin-bottom: 4.8rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s;
+  border-bottom: 1px solid currentColor;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+  transition: all 0.5s;
+}
+
+.list-icon:hover {
+  transform: scale(1.1);
+}
