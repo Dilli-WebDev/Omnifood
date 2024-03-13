@@ -1,6 +1,7 @@
 const yearEl = document.querySelector(".year");
 yearEl.textContent = new Date().getFullYear();
 
+const headerEl = document.querySelector("header");
 const xbtn = document.querySelector(".close-button");
 xbtn.addEventListener("click", () => {
   // add will add the class, whereas toggle is used for both on and off
@@ -8,8 +9,6 @@ xbtn.addEventListener("click", () => {
 });
 
 const navButton = document.querySelector(".mobile-menu-icon");
-const headerEl = document.querySelector("header");
-
 navButton.addEventListener("click", () => {
   // add will add the class, whereas toggle is used for both on and off
   headerEl.classList.toggle("nav-open");
