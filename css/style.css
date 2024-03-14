@@ -78,7 +78,7 @@
   color: #333;
 }
 
-/* to select particluar icon , we can add attribute in CSS , in this case name attribute */
+/* to select particluar icon , we can add   attribute in CSS , in this case name attribute */
 .mobile-menu-icon[name="close-outline"] {
   display: none;
 }
