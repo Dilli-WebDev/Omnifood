@@ -3,7 +3,7 @@
 /* *************************************************/
 .logo {
   /* setting height is easier to control the images */
-  height: 2rem;
+  height: 5rem;
 }
 
 .header {
@@ -609,6 +609,10 @@
 .social-icon {
   height: 2.4rem;
   width: 2.4rem;
+}
+#logo-github {
+  fill: #cf711f;
+  outline: #333;
 }
 
 .copyright {
