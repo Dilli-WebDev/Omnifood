@@ -94,9 +94,9 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255);
   z-index: 8888;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
 }
 
 /* this is added because once header movies out of the dlow , hero section will become first chil of body , and whole page disrupts , so adding the margin-top , makes it seamless */
@@ -200,7 +200,7 @@
 /* HOW IT WORKS SECTION */
 /* *************************************************/
 .how-it-works-section {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
 }
 
 .step-number {
@@ -260,7 +260,7 @@
 /* *************************************************/
 
 .meals-section {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
 }
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -341,6 +341,7 @@
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
+  padding: 4.8rem 0;
 }
 .testimonials-container {
   padding: 6.6rem;
@@ -394,7 +395,7 @@
 /* PRICING SECTION */
 /* *************************************************/
 .pricing-section {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
 }
 
 .pricing-plan {
@@ -508,7 +509,7 @@
   /* /top/right / bottom / left  */
   /* padding: 9.6rem 0 12.8rem 0; */
   /* /top/ horizontal / bottom */
-  padding: 4.8rem 0 12.8rem;
+  padding: 9.6rem 0 12.8rem;
 }
 
 .cta-main-box {
