@@ -1,15 +1,17 @@
 ### HOMENIFY - AI Customised Meals delivery app - Landing Page.
 
-<a target="_blank" href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="70"></a>
+<a target="_blank" alt='homenify-site-link-logo' href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="70"></a>
+
+☝CLICK
 
 ### This Static Website is Built using only
 
 [![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev) <br>
 Very minimal&nbsp;&nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) <br>
 
-## UI Design Principles Implemented:
+### UI Design Principles Implemented:
 
-*As a self taught web developer , it's important that i follow design principles while developing .*
+_As a self taught web developer , it's important that i follow design principles while developing ._
 
 1. Typography
 2. Colors
@@ -20,7 +22,7 @@ Very minimal&nbsp;&nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i
 7. Whitespace
 8. Visual Hierarchy
 
-## Responsive Layout:
+### Responsive Layout:
 
 - Large Desktops
 - Laptops
@@ -30,7 +32,8 @@ Very minimal&nbsp;&nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i
 
 Used rem unit and percentages and reusuable grid and flex layouts for minimal Media queries.
 
-*you can view in any Screen and my site layout won't break.*
+_you can view in any Screen and my site layout won't break._
 
-**********************************************************
+---
+
 **Used Netlify Forms - Please do submit the Form in my Page 😁**
