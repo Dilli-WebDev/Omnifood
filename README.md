@@ -1,4 +1,4 @@
-![Image](/img/Homenify_transparent.png)
+<a href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="48" width="48" ></a>
 
 ## Landing Page for AI suggested Meals delivery App.
 
@@ -6,7 +6,6 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev) <br>
 
-**_[Link to Homenify](https://dilliwebdevproject01.netlify.app “Homenify App”)_**
 
 ## UI Design Principles Implemented:
 
@@ -21,12 +20,12 @@
 
 ## Responsive Layout:
 
--Large Desktops
--Laptops
--Tablet - horizontal
--Tablet - Vertical
--Mobile phones
+- Large Desktops
+- Laptops
+- Tablet - horizontal
+- Tablet - Vertical
+- Mobile phones
 
-you can View in any Screen and my site layout won't break.
-
+you can view in any Screen and my site layout won't break.
+**********************************************************
 Used Netlify Forms - Please do submit the Form in my Page 😁
