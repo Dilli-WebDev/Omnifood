@@ -1,12 +1,11 @@
-<a target="_blank" href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="50"></a>
+### HOMENIFY - AI Customised Meals delivery app - Landing Page.
 
-## Landing Page for AI suggested Meals delivery App.
+<a target="_blank" href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="70"></a>
 
 ### This Static Website is Built using only
 
 [![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev) <br>
-Very minimal [![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) <br>
-
+Very minimal&nbsp;&nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) <br>
 
 ## UI Design Principles Implemented:
 
@@ -29,8 +28,7 @@ Very minimal [![My Skills](https://skillicons.dev/icons?i=js)](https://skillicon
 - Tablet - Vertical
 - Mobile phones
 
-Used rem unit and percentages and reusuable grid and flex layouts.
-and this made me write very minimal medai queries
+Used rem unit and percentages and reusuable grid and flex layouts for minimal Media queries.
 
 *you can view in any Screen and my site layout won't break.*
 
