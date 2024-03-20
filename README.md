@@ -27,10 +27,12 @@ _As a self taught web developer , it's important that i follow design principles
 - Tablet - Vertical
 - Mobile phones
 
-Minimal Media Queries using - Rem unit/Percentages/Reusuable Grid and Flex layouts .
+Minimal Media Queries because:
+Used Rem unit/Percentages/Reusuable Grid and Flex Container in Main Code.
 
-_you can view in any Screen and my site layout won't break._
+_you can view in any Screen and my site layout won't break.😛_
 
 ---
 
 **Used Netlify Forms - Please do submit the Form in my Page 😁**
+---
