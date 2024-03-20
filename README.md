@@ -1,23 +1,37 @@
-# Homenify
+![Image](/img/Homenify_transparent.png)
 
-## Landing Page for AI Customized Meals Delivery Company.
+## Landing Page for AI suggested Meals delivery App.
 
-### Project is mainly focused on UI Design Principles and Responsiveness.
+### Project is mainly focused on UI Design Principles and Responsiveness Using Only
 
-Built this Static Website with only
-[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)</br> and a bit of [![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) for couple of functions.</br>
+[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)</br>
+[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) </br>
+for couple of functions.
 
-https://dilliwebdevproject01.netlify.app/
+**_[Link to Homenify](https://dilliwebdevproject01.netlify.app/ “Homenify App”)_**
 
-UI Design Principles Implemented: </br> 01. Typography - suitbale for an food app </br> 02. Colors - using Tint and shade combination of primary color 03. Images and Illustrations - resizing images 04. Icons - using icons to deliver content faster 05. Shadows 06. Border-radius 07. Whitespace 08. Visual Hierarchy
+## UI Design Principles Implemented:
 
-Responsiveness:
+---
 
-Large Desktops</br>
-Laptops</br>
-Tablet - horizontal</br>
-Tablet - Vertical</br>
-Mobile phones</br>
+1. Typography
+2. Colors
+3. Resizing Images
+4. Icons
+5. Shadows
+6. Border-radius
+7. Whitespace
+8. Visual Hierarchy
+
+## Responsive Layout:
+
+---
+
+-Large Desktops</br>
+-Laptops</br>
+-Tablet - horizontal</br>
+-Tablet - Vertical</br>
+-Mobile phones</br>
 
 you can View in any Screen and my site layout won't break.
 
