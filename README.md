@@ -4,15 +4,11 @@
 
 ### Project is mainly focused on UI Design Principles and Responsiveness Using Only
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)</br>
-[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) </br>
-for couple of functions.
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev) <br>
 
-**_[Link to Homenify](https://dilliwebdevproject01.netlify.app/ “Homenify App”)_**
+**_[Link to Homenify](https://dilliwebdevproject01.netlify.app “Homenify App”)_**
 
 ## UI Design Principles Implemented:
-
----
 
 1. Typography
 2. Colors
@@ -25,13 +21,11 @@ for couple of functions.
 
 ## Responsive Layout:
 
----
-
--Large Desktops</br>
--Laptops</br>
--Tablet - horizontal</br>
--Tablet - Vertical</br>
--Mobile phones</br>
+-Large Desktops
+-Laptops
+-Tablet - horizontal
+-Tablet - Vertical
+-Mobile phones
 
 you can View in any Screen and my site layout won't break.
 
