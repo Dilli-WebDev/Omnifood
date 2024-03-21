@@ -128,10 +128,14 @@ body {
   color: #333;
 }
 
+a:focus {
+  outline: none;
+}
 .btn:focus,
 input:focus,
 select:focus,
-a:focus {
+.link:focus,
+.main-nav-links:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
