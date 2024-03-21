@@ -1,4 +1,6 @@
-### HOMENIFY - AI Customised Meals delivery app - Landing Page.
+## HOMENIFY
+
+### AI Customised Meals delivery app - Landing Page.
 
 <a target="_blank" alt='homenify-site-link-logo' href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="70"></a>&nbsp;&nbsp;&nbsp;&nbsp;👈Check it out.
 
@@ -34,5 +36,4 @@ _you can view in any Screen and my site layout won't break.😛_
 
 ---
 
-**Used Netlify Forms - Please do submit the Form in my Page 😁**
----
+## **Used Netlify Forms - Please do submit the Form in my Page 😁**

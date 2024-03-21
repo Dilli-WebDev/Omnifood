@@ -200,7 +200,7 @@
 /* HOW IT WORKS SECTION */
 /* *************************************************/
 .how-it-works-section {
-  padding: 12.8rem 0;
+  padding: 12.8rem 0 8rem;
 }
 
 .step-number {
@@ -260,7 +260,7 @@
 /* *************************************************/
 
 .meals-section {
-  padding: 12.8rem 0;
+  padding: 12.8rem 0 8rem;
 }
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -395,7 +395,7 @@
 /* PRICING SECTION */
 /* *************************************************/
 .pricing-section {
-  padding: 12.8rem 0;
+  padding: 12.8rem 0 8rem;
 }
 
 .pricing-plan {
