@@ -1,4 +1,4 @@
-## HOMENIFY
+# HOMENIFY
 
 ### AI Customised Meals delivery app - Landing Page.
 
