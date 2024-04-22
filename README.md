@@ -2,15 +2,17 @@
 
 ### AI Customised Meals delivery app - Landing Page.
 
-<a target="_blank" alt='homenify-site-link-logo' href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="70"></a>&nbsp;&nbsp;&nbsp;&nbsp;👈Check it out.
+<a target="_blank" alt='homenify-site-link-logo' href="https://dilliwebdevproject01.netlify.app"><img src="/img/Homenify_transparent.png" align="center" height="50"></a>&nbsp;&nbsp;&nbsp;&nbsp;👈Check it out.
 
-### This Static Website is Built using only
+### **Implemented Netlify Forms - Please do submit the form in my Page 😁**
 
-[![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)&nbsp;&nbsp;&nbsp;&nbsp;and for mobile view navigation&nbsp;&nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) <br>
+### Built using only
 
-### UI Design Principles Implemented:
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev) <br>
 
-_As a self taught web developer , it's important that i follow design principles while developing ._
+### UI Design Principles:
+
+_As a self taught web developer , Implemented below principles on this webpage to make my page look more appealing ._
 
 1. Typography
 2. Colors
@@ -21,7 +23,9 @@ _As a self taught web developer , it's important that i follow design principles
 7. Whitespace
 8. Visual Hierarchy
 
-### Responsive Layout:
+### Responsive Layout Breakpoints:
+
+Minimal media queries changes were implemented because I used rem and percentages units and Reusuable Grid,Flex Container in the main view.
 
 - Large Desktops
 - Laptops
@@ -29,11 +33,6 @@ _As a self taught web developer , it's important that i follow design principles
 - Tablet - Vertical
 - Mobile phones
 
-Minimal Media Queries because:
-Used Rem unit/Percentages/Reusuable Grid and Flex Container in Main Code.
-
 _you can view in any Screen and my site layout won't break.😛_
 
 ---
-
-## **Used Netlify Forms - Please do submit the Form in my Page 😁**
