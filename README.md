@@ -25,7 +25,7 @@ _As a self taught web developer , Implemented below principles on this webpage t
 
 ### Responsive Layout Breakpoints:
 
-Minimal media queries changes were implemented because I used rem and percentages units and Reusuable Grid,Flex Container in the main view.
+_Minimal media queries changes were implemented because I used rem and percentages units and Reusuable Grid,Flex Container in the main view._
 
 - Large Desktops
 - Laptops
